@@ -5,16 +5,16 @@ DECLARE @UserA BIGINT, @UserB BIGINT, @UserC BIGINT;
 -- Insert Test Roles
 ------------------------------------
 
-INSERT INTO dbo.Roles (Name, Description)
-VALUES ('TestRoleA', 'Test role for admin-like permissions');
+INSERT INTO dbo.Roles (Name, Description, CreatedBy)
+VALUES ('TestRoleA', 'Test role for admin-like permissions', 'seed');
 SET @RoleA = SCOPE_IDENTITY();
 
-INSERT INTO dbo.Roles (Name, Description)
-VALUES ('TestRoleB', 'Test role for dev-like permissions');
+INSERT INTO dbo.Roles (Name, Description, CreatedBy)
+VALUES ('TestRoleB', 'Test role for dev-like permissions', 'seed');
 SET @RoleB = SCOPE_IDENTITY();
 
-INSERT INTO dbo.Roles (Name, Description)
-VALUES ('TestRoleC', 'Test role for read-only permissions');
+INSERT INTO dbo.Roles (Name, Description, CreatedBy)
+VALUES ('TestRoleC', 'Test role for read-only permissions', 'seed');
 SET @RoleC = SCOPE_IDENTITY();
 
 
