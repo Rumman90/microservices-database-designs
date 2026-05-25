@@ -122,8 +122,8 @@ erDiagram
     }
 
     UserRoles {
-        BIGINT UserId PK FK
-        INT RoleId PK FK
+        BIGINT UserId PK "FK to Users.Id"
+        INT RoleId PK "FK to Roles.Id"
         DATETIME2 CreatedAt
         NVARCHAR CreatedBy
     }
