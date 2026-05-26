@@ -110,3 +110,7 @@ course-service/02_seed_course_data.sql
 - Stored procedures or views for service-owned read models
 - Docker Compose for local SQL Server setup
 - CI checks that run the scripts against a disposable database
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
